@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="cover">
+        <div class="header">
+            <div class="nhap_lua_chon">
+                <h3>Nhập tên môn học</h3>
+                <input type="text" id="nhap_ten_mon_hoc" value="">
+            </div>
+            <div class="nhap_lua_chon">
+                <h3>Chọn nhóm</h3>
+                <select id="chon_nhom"></select>
+            </div>
+            <div class="nhap_lua_chon">
+                <h3>Chọn thứ</h3>
+                <select id="chon_thu"></select>
+            </div>
+            <div class="nhap_lua_chon">
+                <h3>Chọn tiết bắt đầu</h3>
+                <select name="" id="chon_tiet_bd"></select>
+            </div>
+           <div class="nhap_lua_chon">
+                <h3>Chọn số tiết</h3>
+                <select name="" id="chon_so_tiet"></select>
+           </div>
+            <button class="btt" type="submit" onclick="luu_mon()">
+                <h3>Lưu môn</h3>
+            </button>
+             <div class="nhap_lua_chon">
+                <h3>Nhập Chuỗi thời khóa biểu</h3>
+                <input type="text" id="chuoi" value="">
+            </div>
+            <button class="btt" type="submit" onclick="xu_ly()">
+                <h3>Xử lý chuỗi</h3>
+            </button>
+        </div>
+        <div class="cover_tkb">
+            <div class="thu_ngay">
+                <ul class="ds_thu_ngay">
+                    <li class="thu">
+                        <h3>TKB</h3>
+                        <div class="ds_tiet">
+                            <ul>
+                                <li>Tiết 1</li>
+                                <li>Tiết 2</li>
+                                <li>Tiết 3</li>
+                                <li>Tiết 4</li>
+                                <li>Tiết 5</li>
+                                <li>Nghỉ trưa</li>
+                                <li>Tiết 6</li>
+                                <li>Tiết 7</li>
+                                <li>Tiết 8</li>
+                                <li>Tiết 9</li>
+                                <li>Tiết 10</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="thu">
+                        <h3>Thứ 2</h3>
+                        <div class="ds_tiet">
+                            <ul>
+                                <li class="tiet1">-</li>
+                                <li class="tiet2">-</li>
+                                <li class="tiet3">-</li>
+                                <li class="tiet4">-</li>
+                                <li class="tiet5">-</li>
+                                <li class="tiet">-</li>
+                                <li class="tiet6">-</li>
+                                <li class="tiet7">-</li>
+                                <li class="tiet8">-</li>
+                                <li class="tiet9">-</li>
+                                <li class="tiet10">-</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="thu">
+                        <h3>Thứ 3</h3>
+                        <div class="ds_tiet">
+                            <ul>
+                                <li class="tiet1">-</li>
+                                <li class="tiet2">-</li>
+                                <li class="tiet3">-</li>
+                                <li class="tiet4">-</li>
+                                <li class="tiet5">-</li>
+                                <li class="tiet">-</li>
+                                <li class="tiet6">-</li>
+                                <li class="tiet7">-</li>
+                                <li class="tiet8">-</li>
+                                <li class="tiet9">-</li>
+                                <li class="tiet10">-</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="thu">
+                        <h3>Thứ 4</h3>
+                        <div class="ds_tiet">
+                            <ul>
+                                <li class="tiet1">-</li>
+                                <li class="tiet2">-</li>
+                                <li class="tiet3">-</li>
+                                <li class="tiet4">-</li>
+                                <li class="tiet5">-</li>
+                                <li class="tiet">-</li>
+                                <li class="tiet6">-</li>
+                                <li class="tiet7">-</li>
+                                <li class="tiet8">-</li>
+                                <li class="tiet9">-</li>
+                                <li class="tiet10">-</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="thu">
+                        <h3>Thứ 5</h3>
+                        <div class="ds_tiet">
+                            <ul>
+                                <li class="tiet1">-</li>
+                                <li class="tiet2">-</li>
+                                <li class="tiet3">-</li>
+                                <li class="tiet4">-</li>
+                                <li class="tiet5">-</li>
+                                <li class="tiet">-</li>
+                                <li class="tiet6">-</li>
+                                <li class="tiet7">-</li>
+                                <li class="tiet8">-</li>
+                                <li class="tiet9">-</li>
+                                <li class="tiet10">-</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="thu">
+                        <h3>Thứ 6</h3>
+                        <div class="ds_tiet">
+                            <ul>
+                                <li class="tiet1">-</li>
+                                <li class="tiet2">-</li>
+                                <li class="tiet3">-</li>
+                                <li class="tiet4">-</li>
+                                <li class="tiet5">-</li>
+                                <li class="tiet">-</li>
+                                <li class="tiet6">-</li>
+                                <li class="tiet7">-</li>
+                                <li class="tiet8">-</li>
+                                <li class="tiet9">-</li>
+                                <li class="tiet10">-</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="thu">
+                        <h3>Thứ 7</h3>
+                        <div class="ds_tiet">
+                            <ul>
+                                <li class="tiet1">-</li>
+                                <li class="tiet2">-</li>
+                                <li class="tiet3">-</li>
+                                <li class="tiet4">-</li>
+                                <li class="tiet5">-</li>
+                                <li class="tiet">-</li>
+                                <li class="tiet6">-</li>
+                                <li class="tiet7">-</li>
+                                <li class="tiet8">-</li>
+                                <li class="tiet9">-</li>
+                                <li class="tiet10">-</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="thu">
+                        <h3>Chủ nhật</h3>
+                        <div class="ds_tiet">
+                            <ul>
+                                <li class="tiet1">-</li>
+                                <li class="tiet2">-</li>
+                                <li class="tiet3">-</li>
+                                <li class="tiet4">-</li>
+                                <li class="tiet5">-</li>
+                                <li class="tiet">-</li>
+                                <li class="tiet6">-</li>
+                                <li class="tiet7">-</li>
+                                <li class="tiet8">-</li>
+                                <li class="tiet9">-</li>
+                                <li class="tiet10">-</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="ky_ten">
+        <h4>Cre: Mảnh đẹp troai :))</h4>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
